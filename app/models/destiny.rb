@@ -1,0 +1,2 @@
+class Destiny < ApplicationRecord
+end
