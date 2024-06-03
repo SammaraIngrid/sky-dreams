@@ -12,7 +12,10 @@
       <td><%= client.id %></td>
       <td><%= client.name %></td>
       <td><%= client.document %></td>
-      <td><%= link_to('Excluir', client_path(client), data: { turbo_method: :delete, turbo_confirm: "Deseja excluir?" }) %></td>
+      <td>
+        <%= link_to('Excluir', client_path(client), data: { turbo_method: :delete, turbo_confirm: "Deseja excluir?" }) %>
+        <%= link_to('Detalhes', client_path(client)) %>
+      </td>
     </tr>
   <% end %>
 </table>

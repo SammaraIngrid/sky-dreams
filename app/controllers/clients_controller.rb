@@ -3,6 +3,10 @@ class ClientsController < ApplicationController
     @clients = Client.all.order(created_at: :desc)
   end
 
+  def show
+    @client = Client.find(params[:id])
+  end
+
   def destroy
     @client = Client.find(params[:id])
 
