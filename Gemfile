@@ -28,6 +28,8 @@ gem "jbuilder"
 
 gem 'pg', '~> 1.1'
 
+gem 'pry'
+
 # Use Redis adapter to run Action Cable in production
 gem "redis", ">= 4.0.1"
 
