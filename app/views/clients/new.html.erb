@@ -1,0 +1,29 @@
+<%= form_with(model: @client, local: true) do |f| %>
+
+  <%= f.label :email %>
+  <%= f.email_field :email %>
+
+  <%= f.label "Nome" %>
+  <%= f.text_field :name %>
+
+  <%= f.label "Documento" %>
+  <%= f.text_field :document %>
+
+  <%= f.label "Telefone" %>
+  <%= f.text_field :phone %>
+
+  <%= f.label "Data de Nascimento" %>
+  <%= f.date_field :birth_date %>
+
+  <%= f.label "Gênero" %>
+  <%= f.text_field :gender %>
+
+  <%= f.label "Passaporte" %>
+  <%= f.text_field :passport %>
+
+  <%= f.label "Nacionalidade" %>
+  <%= f.text_field :nationality%>
+
+  <%= f.submit "Criar" %>
+
+<% end %>
