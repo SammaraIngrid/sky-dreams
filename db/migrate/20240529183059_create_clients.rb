@@ -1,14 +1,14 @@
 class CreateClients < ActiveRecord::Migration[7.1]
   def change
     create_table :clients do |t|
-      t.string :name, null: false
-      t.string :document, null: false
-      t.string :email, null: false
-      t.string :phone, null: false
-      t.date :birth_date, null: false
-      t.string :gender, null: false
-      t.string :passport, null: false
-      t.string :nationality, null: false
+      t.string :name
+      t.string :document
+      t.string :email
+      t.string :phone
+      t.date :birth_date
+      t.string :gender
+      t.string :passport
+      t.string :nationality
       t.string :image
       t.boolean :status, default: 'active'
 

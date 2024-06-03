@@ -15,27 +15,27 @@ ActiveRecord::Schema[7.1].define(version: 2024_05_29_185231) do
   enable_extension "plpgsql"
 
   create_table "addresses", force: :cascade do |t|
-    t.string "zip_code", null: false
-    t.string "country", null: false
-    t.string "street", null: false
-    t.string "number", default: "0"
-    t.string "neighborhood", null: false
-    t.string "state", null: false
-    t.string "city", null: false
+    t.string "zip_code"
+    t.string "country"
+    t.string "street"
+    t.string "number"
+    t.string "neighborhood"
+    t.string "state"
+    t.string "city"
     t.string "complement"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
   create_table "clients", force: :cascade do |t|
-    t.string "name", null: false
-    t.string "document", null: false
-    t.string "email", null: false
-    t.string "phone", null: false
-    t.date "birth_date", null: false
-    t.string "gender", null: false
-    t.string "passport", null: false
-    t.string "nationality", null: false
+    t.string "name"
+    t.string "document"
+    t.string "email"
+    t.string "phone"
+    t.date "birth_date"
+    t.string "gender"
+    t.string "passport"
+    t.string "nationality"
     t.string "image"
     t.boolean "status", default: true
     t.bigint "created_by_id"

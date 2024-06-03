@@ -1,13 +1,13 @@
 class CreateAddresses < ActiveRecord::Migration[7.1]
   def change
     create_table :addresses do |t|
-      t.string :zip_code, null: false
-      t.string :country, null: false
-      t.string :street, null: false
-      t.string :number,  default: 0
-      t.string :neighborhood, null: false
-      t.string :state, null: false
-      t.string :city, null: false
+      t.string :zip_code
+      t.string :country
+      t.string :street
+      t.string :number
+      t.string :neighborhood
+      t.string :state
+      t.string :city
       t.string :complement
 
       t.timestamps
